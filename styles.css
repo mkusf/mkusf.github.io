@@ -10,6 +10,12 @@ body {
 p {
     text-align: center;
 }
+.txt {
+    font-size: 2rem;
+}
+.projdesc {
+
+}
 .header{
     text-align: center;
     font-size: 4rem;
@@ -80,6 +86,7 @@ p {
 /* START PAGE2 */
 .page2 {
     width: 100%;
+    padding-top: 10%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -87,6 +94,8 @@ p {
 }
 
 .techstack {
+    padding-top: 5%;
+    padding-bottom: 5%;
     display: flex;
     flex-direction: row;
     justify-content:space-evenly;
@@ -98,14 +107,15 @@ p {
     object-fit: contain;
 }
 
-
-.sub_projects{
+.project{
+    padding-top: 2%;
     display: flex;
-    flex-direction: column;
-    justify-content:space-around;
-    flex-wrap: wrap;
-    
+    justify-content:center;
+    padding-left: 5%;
+    padding-right: 5%;
+    gap:10%
 }
+
 
 .subheader {
     font-size: 2rem;
@@ -121,6 +131,12 @@ p {
     flex-wrap: wrap;
 }
 
+.pastimes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
 
 /* END PAGE3 */
 /* START PAGE4 */
