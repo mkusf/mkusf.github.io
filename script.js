@@ -12,11 +12,15 @@ TSButton.addEventListener("click", function() {
 });
 
 const ProjectsButton = document.getElementById("ProjectsButton");
-Aboutbutton.addEventListener("click", function() {
+ProjectsButton.addEventListener("click", function() {
   alert("test");
 });
 
 const FPButton = document.getElementById("FPButton");
-TSButton.addEventListener("click", function() {
+FPButton.addEventListener("click", function() {
+  alert("test");
+});
+const ReturnButton = document.getElementById("ReturnButton");
+ReturnButton.addEventListener("click", function() {
   alert("test");
 });
