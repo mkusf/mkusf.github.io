@@ -147,11 +147,32 @@ p {
     justify-content: center;
 
 }
+
 /* END PAGE3 */
 /* START PAGE4 */
+.page4 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+.que{
+    padding-top:5%;
+}
+.ques{
+    padding-top:5%;
+    padding-left:24.00%;
+    width:50.0%;
+    height:20.0%;
+    font-size: 2.0rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 .ReturnButton{
-    width:20%;
-    height:10%;
+    font-size: 2.00rem;
     font-family: Questrial;
 }
 /* END PAGE4 */
