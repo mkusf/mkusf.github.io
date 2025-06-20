@@ -49,10 +49,13 @@ p {
 /* END NAVBAR */
 /* START PAGE1 */
 .flexrow {
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content:space-evenly;
+    justify-content:space-between;
     flex-wrap: wrap;
 }
 .col1_page1 {
@@ -62,9 +65,7 @@ p {
     justify-content:space-evenly;
     flex-wrap: wrap;
 }
-.col2_page1 {
-    max-width: 25%;
-}
+
 .markusphoto {
     width:23rem;
     height:26rem;
