@@ -1,10 +1,16 @@
-import { useState } from 'react'
+import { Routes, Route } from 'react-router-dom'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <div>work in progress</div>
+    <div className='container-page-padding'>
+      <div className='flex gap-3'>
+        <div className='small-box-placeholder'> </div>
+        <div> projects </div>
+        <div> contact </div>
+        <div> bio </div>
+        <div> resume </div>
+      </div>
+    </div>
   )
 }
 
