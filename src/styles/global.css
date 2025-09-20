@@ -1,8 +1,10 @@
 @import "tailwindcss";
 
-.small-box-placeholder {
-    @apply w-10 h-10 bg-purple-400;
+:root {
+    background-color:#0F0F0F;
+    color: #F3F4F6;
 }
+
 .container-page-padding {
     @apply max-w-screen-xl mx-auto p-3;
 }
