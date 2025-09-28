@@ -5,6 +5,14 @@
     color: #F3F4F6;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+.font-sansation {
+  font-family: 'Sansation', sans-serif;
+}
+
 .container-page-padding {
     @apply max-w-screen-xl mx-auto p-3;
 }

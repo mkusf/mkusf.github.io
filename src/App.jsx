@@ -1,14 +1,16 @@
-import { Routes, Route } from 'react-router-dom'
 import Nav from './components/NavBar'
-import Home from './components/Home'
+import Home from './pages/Home'
+import Projects from './pages/Projects'
+import Contact from './pages/Contact'
+import AboutMe from './pages/AboutMe'
 function App() {
   return (
     <div className='gap-3 flex flex-col'>
       <Nav/>
-      <Routes>
-        <Route path="/" element={<Home/>}/>
-        <Route path="/projects" element={<Projects/>} />
-      </Routes>
+      <Home id="Home" />
+      <Projects id="Projects" />
+      <Contact id="Contact"/>
+      <AboutMe id="AboutMe"/>
       </div>
   )
 }

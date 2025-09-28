@@ -1,5 +1,7 @@
-export default function AboutMe() {
+export default function AboutMe({ id }) {
     return(
-        <div></div>
+        <div id={id} >
+            aboutme
+        </div>
     );
 }

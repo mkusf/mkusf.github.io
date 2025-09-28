@@ -1,5 +1,5 @@
-export default function Projects() {
+export default function Projects({ id }) {
     return(
-        <div></div>
+        <div id={id} >project</div>
     );
 }
