@@ -9,8 +9,9 @@ function App() {
       <Nav/>
       <Home id="Home" />
       <Projects id="Projects" />
-      <Contact id="Contact"/>
       <AboutMe id="AboutMe"/>
+      <Contact id="Contact"/>
+      
       </div>
   )
 }

@@ -7,63 +7,95 @@ import closeIcon from "/assets/grp4.png";
 export default function NavBar() {
     const [isOpen, setIsOpen] = useState(false);
     return (
-        <div className=" z-50 fixed top-0 flex flex-col w-screen">
+        <div className={`z-50 fixed top-0 flex flex-col w-screen`}>
             {/* NavBar */}
-            <div className=' flex justify-between items-center gap-3 bg-[#1E1E1E] px-2.5 min-h-20 '>
-                <img className = " z-40 w-18 h-18" alt="Website Icon" src="/assets/mkusf-web-icon-removebg.png"></img>
+            <div className={` 
+                flex justify-between items-center md:justify-start
+                bg-[#1E1E1E]
+                min-h-20
+                px-5
+                md:px-0
+            `}>
+                {/* Website Icon */}
+                <a href="#Home"><img className = " md:mx-5 2xl:mx-10 bg-contain z-40 h-auto w-11 md:w-14.5 lg:w-20 active:opacity-50" alt="Website Icon" src="/assets/mkusf-web-icon-removebg.png"></img></a>
+                {/*
+                Tablet and More
+                Anchor Buttons
+                */}
+                <div className="hidden justify-around md:flex grow">
+                    <div className="h-20 px-6 lg:px-10 2xl:px-15 content-center active:bg-[#755eb9]">
+                        <a onClick={() => setIsOpen(false)} href="#Home" className={`
+                            font-sansation md:text-3xl font-light
+                        `}> Home </a>
+                    </div>
+                    <div className="h-20 px-6 lg:px-10 2xl:px-15 content-center active:bg-[#755eb9]">
+                        <a onClick={() => setIsOpen(false)} href="#Projects" className={`
+                            font-sansation md:text-3xl font-light
+                        `}> Projects </a>
+                    </div>
+                    <div className="h-20 px-6 lg:px-10 2xl:px-15 content-center active:bg-[#755eb9]">
+                        <a onClick={() => setIsOpen(false)} href="#AboutMe" className={`
+                            font-sansation md:text-3xl font-light
+                        `}> About Me </a>
+                    </div>
+                    <div className="h-20 px-6 lg:px-10 2xl:px-15 content-center active:bg-[#755eb9]">
+                        <a onClick={() => setIsOpen(false)} href="#Contact" className={`
+                            font-sansation md:text-3xl font-light
+                        `}> Contact </a>
+                    </div>
+                </div>
+                {/* Mobile Menu Button*/}
                 <img
                     src={isOpen ? closeIcon : menuIcon}
                     alt="menu toggle"
-                    className="z-40 w-7 h-6 mr-4 bg-cover cursor-pointer "
+                    className="z-40 w-7 h-6 bg-cover cursor-pointer md:hidden "
                     onClick={() => setIsOpen(!isOpen)}
                 />
             </div>
-            {/* See through cover */}
+            {/* Mobile See through cover */}
             <div onClick={ () => setIsOpen(false)} className={`fixed inset-0 z-30 bg-black transition-opacity duration-300
-                ${ isOpen ? "fixed top-0 left-0 z-30 opacity-50 pointer-events-auto bg-black h-screen w-screen " : "opacity-0 pointer-events-none"}
+                ${ isOpen ? "fixed top-0 left-0 z-30 opacity-50 pointer-events-auto bg-black h-screen w-screen " : " md:hidden opacity-0 pointer-events-none"}
                 `}
             />
-            {/* Menu Options*/}
-            {/* Menu background*/}
+            {/* Mobile Menu Options*/}
+            {/* Mobile Menu background*/}
             <div className={ isOpen ? `
-                fixed top-20 left-0 z-40 flex flex-col 
+                fixed top-20 left-0 z-40 flex flex-col md:hidden
                 opacity-100 pointer-events-auto transition-opacity duration-300
                 bg-[#242424]
                 min-h-40 w-screen 
-                pl-2 gap-y-2
                 ` : `
-                fixed top-20 left-0 z-40 flex flex-col
+                fixed top-20 left-0 z-40 flex flex-col md:hidden
                 opacity-0 pointer-events-none transition-opacity duration-300 
                 bg-[#242424]
                 min-h-40 w-screen 
-                pl-2 gap-y-2
             `}>
                 {/*
-                Menu page buttons:
+                Mobile Menu page buttons:
                 Home
                 Projects
                 AboutMe
                 Contact
                 */}
                 <a onClick={() => setIsOpen(false)} href="#Home" className={`
-                    font-sansation text-2xl font-light
+                    font-sansation text-2xl py-2 font-light active:bg-[#755eb9]
                 `}>
-                    Home
+                    <div className="pl-2">Home</div>
                 </a>
                 <a onClick={() => setIsOpen(false)} href="#Projects"  className={`
-                    font-sansation text-2xl font-light
+                    font-sansation text-2xl py-2 font-light active:bg-[#755eb9]
                 `}>
-                    Projects
+                    <div className="pl-2">Projects</div>
                 </a>
-                <a onClick={() => setIsOpen(false)} href="#AboutMe" className={`
-                    font-sansation text-2xl font-light
+                <a onClick={() =>  setIsOpen(false)} href="#AboutMe" className={`
+                    font-sansation text-2xl  py-2 font-light active:bg-[#755eb9]
                 `}>
-                    About Me
+                    <div className="pl-2">About Me</div>
                 </a>
                 <a onClick={() => setIsOpen(false)} href="#Contact" className={`
-                    font-sansation text-2xl font-light
+                    font-sansation text-2xl py-2 font-light active:bg-[#755eb9]
                 `}>
-                    Contact
+                    <div className="pl-2">Contact</div>
                 </a>
             </div>
             

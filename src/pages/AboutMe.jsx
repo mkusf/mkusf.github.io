@@ -1,7 +1,7 @@
 export default function AboutMe({ id }) {
     return(
-        <div id={id} >
+        <div id={id}  >
             aboutme
-        </div>
+        HIHI<br/>HI<br/>HI<br/>HIHI<br/>HI<br/>HI<br/>HIHI<br/>HI<br/>HI<br/>HIHI<br/>HI<br/>HI<br/>HI<br/>HI<br/>HI<br/>HI<br/>HI<br/>HI<br/>HI<br/>HI<br/>HI<br/>HI<br/>HI<br/>HI<br/>HI<br/>HI<br/>HI<br/>HI<br/>HI<br/>HI<br/>HI<br/>HI<br/>HI<br/>HI<br/></div>
     );
 }
