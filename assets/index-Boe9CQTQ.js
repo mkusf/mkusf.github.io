@@ -64,17 +64,17 @@ Please change the parent <Route path="${Q}"> to <Route path="${Q==="/"?"*":`${Q}
                 px-5
                 md:px-0
             `,children:[x.jsx("a",{href:"#Home",children:x.jsx("img",{className:" md:mx-5 2xl:mx-10 bg-contain z-40 h-auto w-11 md:w-14.5 lg:w-20 active:opacity-50",alt:"Website Icon",src:"/assets/mkusf-web-icon-removebg.png"})}),x.jsxs("div",{className:"hidden justify-around md:flex grow",children:[x.jsx("a",{onClick:()=>s(!1),href:"#Home",className:`
-                            md:text-2xl lg:3xl font-light
-                            block h-20 px-6 lg:px-10 2xl:px-15 content-center active:bg-[#755eb9]
+                            md:text-2xl lg:3xl font-light 
+                            block h-20 flex-1 content-center text-center active:bg-[#755eb9] hover:bg-[#755eb9]
                         `,children:" Home"}),x.jsx("a",{onClick:()=>s(!1),href:"#Projects",className:`
                             md:text-2xl lg:3xl font-light
-                            block h-20 px-6 lg:px-10 2xl:px-15 content-center active:bg-[#755eb9]
-                        `,children:" Projects"}),x.jsx("div",{className:"",children:x.jsx("a",{onClick:()=>s(!1),href:"#AboutMe",className:`
+                            block h-20 flex-1 content-center text-center active:bg-[#755eb9] hover:bg-[#755eb9]
+                        `,children:" Projects"}),x.jsx("a",{onClick:()=>s(!1),href:"#AboutMe",className:`
                             md:text-2xl lg:3xl font-light
-                            block h-20 px-6 lg:px-10 2xl:px-15 content-center active:bg-[#755eb9]
-                        `,children:" About Me "})}),x.jsx("a",{onClick:()=>s(!1),href:"#Contact",className:`
+                            block h-20 flex-1 content-center text-center active:bg-[#755eb9] hover:bg-[#755eb9]
+                        `,children:" About Me"}),x.jsx("a",{onClick:()=>s(!1),href:"#Contact",className:`
                             md:text-2xl lg:3xl font-light
-                            block h-20 px-6 lg:px-10 2xl:px-15 content-center active:bg-[#755eb9]
+                            block h-20 flex-1 content-center text-center active:bg-[#755eb9] hover:bg-[#755eb9]
                         `,children:" Contact"})]}),x.jsx("img",{src:c?ey:ly,alt:"menu toggle",className:"z-40 w-7 h-6 bg-cover cursor-pointer md:hidden ",onClick:()=>s(!c)})]}),x.jsx("div",{onClick:()=>s(!1),className:`fixed inset-0 z-30 bg-black transition-opacity duration-300
                 ${c?"fixed top-0 left-0 z-30 opacity-50 pointer-events-auto bg-black h-screen w-screen ":" md:hidden opacity-0 pointer-events-none"}
                 `}),x.jsxs("div",{className:c?`
@@ -111,14 +111,18 @@ Please change the parent <Route path="${Q}"> to <Route path="${Q==="/"?"*":`${Q}
                     `:`
                     opacity-0 pointer-events-none transition-opacity duration-400 
                     text-2xl py-2 font-light active:bg-[#755eb9]
-                `,children:x.jsx("div",{className:"pl-2",children:"Contact"})})]})]})}function uy({id:c}){return x.jsxs("div",{id:c,className:"z-0 pt-30 md:pt-22 flex flex-col",children:[x.jsxs("div",{className:"flex flex-col items-center gap-2",children:[x.jsx("div",{className:"text-4xl font-light",children:"Hi, I'm"}),x.jsx("div",{className:"mt-3 text-5xl text-[#A78BFA]",children:"Markus Feng"}),x.jsxs("div",{className:"text-[#D1D5DB] text-md italic text-center",children:["Computer Science Student",x.jsx("p",{className:"leading-1",children:"•"})," Aspiring Software Engineer"]}),x.jsx("a",{href:"#AboutMe",className:"-mt-2.5 text-[#6D28D9] active:text-[#14B8A6] text-md not-italic text-center",children:"More about me"})]}),x.jsxs("div",{className:"flex flex-row justify-evenly items-center my-20 ",children:[x.jsx("a",{className:`
-                    pb-[0.5px] outline-3 outline-[#6D28D9] rounded-4xl outline-offset-3
-                    active:outline-[#14B8A6]
-                `,href:"https://github.com/mkusf",children:x.jsx("img",{className:"object-scale-down w-11 h-11",alt:"GitHub Logo",src:"assets/github-logo.png"})}),x.jsx("a",{className:`
-                    pl-[2.4px] py-[1px] outline-3 outline-[#6D28D9] rounded-sm outline-offset-2
-                    active:outline-[#14B8A6]
-                `,href:"https://www.linkedin.com/in/markus-feng-302649290",children:x.jsx("img",{className:" object-scale-down w-11 h-11",alt:"LinkedIn Logo",src:"assets/linkedin-logo.png"})}),x.jsx("a",{className:`
-                    w-12 h-9 outline-3 outline-[#6D28D9] rounded-sm outline-offset-1
+                `,children:x.jsx("div",{className:"pl-2",children:"Contact"})})]})]})}function uy({id:c}){return x.jsxs("div",{id:c,className:"z-0 pt-30 md:pt-40 flex flex-col sm:flex-row sm:justify-evenly",children:[x.jsxs("div",{className:"flex flex-col items-center sm:items-start gap-2",children:[x.jsx("div",{className:"text-4xl sm:text-6xl font-light",children:"Hi, I'm"}),x.jsx("div",{className:"mt-3 sm:mt-7 text-5xl sm:text-8xl text-left text-[#A78BFA]",children:"Markus Feng"}),x.jsxs("div",{className:"flex flex-col justify-center w-full",children:[x.jsxs("div",{className:"sm:flex sm:flex-row text-[#D1D5DB] text-md sm:text-xl italic sm:gap-2 sm:justify-center sm:items-center text-center",children:["Computer Science Student",x.jsx("p",{className:"leading-2 sm:leading-0",children:"•"})," Aspiring Software Engineer"]}),x.jsx("a",{href:"#AboutMe",className:" sm:hover:text-[#14B8A6] sm:mt-0 text-[#6D28D9] active:text-[#14B8A6] text-md sm:text-xl not-italic text-center",children:"Find more about me"})]})]}),x.jsxs("div",{className:`
+                flex flex-row sm:flex-col justify-around items-center
+                my-25 mx-5 py-5 sm:my-0 sm:px-5 sm:gap-12 2xl:gap-14
+                bg-[#1E1E1E] border-[#3D3D3D] border-1 rounded-2xl
+                `,children:[x.jsx("a",{className:`
+                    pb-[1.5px] outline-3 outline-[#6D28D9] rounded-4xl outline-offset-3
+                    active:outline-[#14B8A6] sm:hover:outline-[#14B8A6]
+                `,href:"https://github.com/mkusf",children:x.jsx("img",{className:"object-scale-down w-11 h-11 2xl:w-16 2xl:h-16",alt:"GitHub Logo",src:"assets/github-logo.png"})}),x.jsx("a",{className:`
+                    pl-[2.5px] py-[1px] outline-3 outline-[#6D28D9] rounded-sm outline-offset-2
+                    active:outline-[#14B8A6] sm:hover:outline-[#14B8A6]
+                `,href:"https://www.linkedin.com/in/markus-feng-302649290",children:x.jsx("img",{className:" object-scale-down w-11 h-11 2xl:w-16 2xl:h-16",alt:"LinkedIn Logo",src:"assets/linkedin-logo.png"})}),x.jsx("a",{className:`
+                    w-12 h-9 2xl:w-17 2xl:h-14 outline-3 outline-[#6D28D9] rounded-sm outline-offset-1
                     content-center
-                    active:outline-[#14B8A6]
+                    active:outline-[#14B8A6] sm:hover:outline-[#14B8A6]
                 `,href:"mailto:markusfeng@yahoo.ca",children:x.jsx("img",{className:" object-scale-down",alt:"Mail Icon",src:"assets/email.png"})})]})]})}function ny({id:c}){return x.jsxs("div",{id:c,children:["projectHIHI",x.jsx("br",{}),"HI",x.jsx("br",{}),"HI",x.jsx("br",{}),"HIHI",x.jsx("br",{}),"HI",x.jsx("br",{}),"HI",x.jsx("br",{}),"HIHI",x.jsx("br",{}),"HI",x.jsx("br",{}),"HI",x.jsx("br",{}),"HIHI",x.jsx("br",{}),"HI",x.jsx("br",{}),"HI",x.jsx("br",{}),"HI",x.jsx("br",{}),"HI",x.jsx("br",{}),"HI",x.jsx("br",{}),"HI",x.jsx("br",{}),"HI",x.jsx("br",{}),"HI",x.jsx("br",{}),"HI",x.jsx("br",{}),"HI",x.jsx("br",{}),"HI",x.jsx("br",{}),"HI",x.jsx("br",{}),"HI",x.jsx("br",{}),"HI",x.jsx("br",{}),"HI",x.jsx("br",{}),"HI",x.jsx("br",{}),"HI",x.jsx("br",{}),"HI",x.jsx("br",{}),"HI",x.jsx("br",{}),"HI",x.jsx("br",{}),"HI",x.jsx("br",{}),"HI",x.jsx("br",{}),"HI",x.jsx("br",{}),"HI",x.jsx("br",{})]})}function iy({id:c}){return x.jsxs("div",{id:c,children:["contactHIHI",x.jsx("br",{}),"HI",x.jsx("br",{}),"HI",x.jsx("br",{}),"HIHI",x.jsx("br",{}),"HI",x.jsx("br",{}),"HI",x.jsx("br",{}),"HIHI",x.jsx("br",{}),"HI",x.jsx("br",{}),"HI",x.jsx("br",{}),"HIHI",x.jsx("br",{}),"HI",x.jsx("br",{}),"HI",x.jsx("br",{}),"HI",x.jsx("br",{}),"HI",x.jsx("br",{}),"HI",x.jsx("br",{}),"HI",x.jsx("br",{}),"HI",x.jsx("br",{}),"HI",x.jsx("br",{}),"HI",x.jsx("br",{}),"HI",x.jsx("br",{}),"HI",x.jsx("br",{}),"HI",x.jsx("br",{}),"HI",x.jsx("br",{}),"HI",x.jsx("br",{}),"HI",x.jsx("br",{}),"HI",x.jsx("br",{}),"HI",x.jsx("br",{}),"HI",x.jsx("br",{}),"HI",x.jsx("br",{}),"HI",x.jsx("br",{}),"HI",x.jsx("br",{}),"HI",x.jsx("br",{}),"HI",x.jsx("br",{}),"HI",x.jsx("br",{})]})}function cy({id:c}){return x.jsxs("div",{id:c,children:["aboutme HIHI",x.jsx("br",{}),"HI",x.jsx("br",{}),"HI",x.jsx("br",{}),"HIHI",x.jsx("br",{}),"HI",x.jsx("br",{}),"HI",x.jsx("br",{}),"HIHI",x.jsx("br",{}),"HI",x.jsx("br",{}),"HI",x.jsx("br",{}),"HIHI",x.jsx("br",{}),"HI",x.jsx("br",{}),"HI",x.jsx("br",{}),"HI",x.jsx("br",{}),"HI",x.jsx("br",{}),"HI",x.jsx("br",{}),"HI",x.jsx("br",{}),"HI",x.jsx("br",{}),"HI",x.jsx("br",{}),"HI",x.jsx("br",{}),"HI",x.jsx("br",{}),"HI",x.jsx("br",{}),"HI",x.jsx("br",{}),"HI",x.jsx("br",{}),"HI",x.jsx("br",{}),"HI",x.jsx("br",{}),"HI",x.jsx("br",{}),"HI",x.jsx("br",{}),"HI",x.jsx("br",{}),"HI",x.jsx("br",{}),"HI",x.jsx("br",{}),"HI",x.jsx("br",{}),"HI",x.jsx("br",{}),"HI",x.jsx("br",{}),"HI",x.jsx("br",{})]})}function fy(){return x.jsxs("div",{children:["Credits",x.jsx("div",{children:x.jsx("a",{href:"https://www.flaticon.com/free-icons/email",title:"email icons",children:"Email icons created by Freepik - Flaticon"})})]})}function ry(){return x.jsxs("div",{className:"gap-3 flex flex-col",children:[x.jsx(ay,{}),x.jsx(uy,{id:"Home"}),x.jsx(ny,{id:"Projects"}),x.jsx(cy,{id:"AboutMe"}),x.jsx(iy,{id:"Contact"}),x.jsx(fy,{})]})}U0.createRoot(document.getElementById("root")).render(x.jsx(U.StrictMode,{children:x.jsx(wv,{children:x.jsx(ry,{})})}));
