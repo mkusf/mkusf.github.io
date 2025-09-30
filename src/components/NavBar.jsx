@@ -24,24 +24,23 @@ export default function NavBar() {
                 */}
                 <div className="hidden justify-around md:flex grow">
                     <a onClick={() => setIsOpen(false)} href="#Home" className={`
-                            md:text-2xl lg:3xl font-light
-                            block h-20 px-6 lg:px-10 2xl:px-15 content-center active:bg-[#755eb9]
+                            md:text-2xl lg:3xl font-light 
+                            block h-20 flex-1 content-center text-center active:bg-[#755eb9] hover:bg-[#755eb9]
                         `}> Home 
                     </a>
                     <a onClick={() => setIsOpen(false)} href="#Projects" className={`
                             md:text-2xl lg:3xl font-light
-                            block h-20 px-6 lg:px-10 2xl:px-15 content-center active:bg-[#755eb9]
+                            block h-20 flex-1 content-center text-center active:bg-[#755eb9] hover:bg-[#755eb9]
                         `}> Projects 
                     </a>
-                    <div className="">
-                        <a onClick={() => setIsOpen(false)} href="#AboutMe" className={`
+                    <a onClick={() => setIsOpen(false)} href="#AboutMe" className={`
                             md:text-2xl lg:3xl font-light
-                            block h-20 px-6 lg:px-10 2xl:px-15 content-center active:bg-[#755eb9]
-                        `}> About Me </a>
-                    </div>
+                            block h-20 flex-1 content-center text-center active:bg-[#755eb9] hover:bg-[#755eb9]
+                        `}> About Me 
+                    </a>
                     <a onClick={() => setIsOpen(false)} href="#Contact" className={`
                             md:text-2xl lg:3xl font-light
-                            block h-20 px-6 lg:px-10 2xl:px-15 content-center active:bg-[#755eb9]
+                            block h-20 flex-1 content-center text-center active:bg-[#755eb9] hover:bg-[#755eb9]
                         `}> Contact 
                     </a>
                 </div>
