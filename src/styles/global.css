@@ -3,15 +3,13 @@
 :root {
     background-color:#0F0F0F;
     color: #F3F4F6;
+    font-family: 'Sansation', sans-serif;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
-.font-sansation {
-  font-family: 'Sansation', sans-serif;
-}
 
 .container-page-padding {
     @apply max-w-screen-xl mx-auto p-3;

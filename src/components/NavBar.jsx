@@ -24,23 +24,23 @@ export default function NavBar() {
                 */}
                 <div className="hidden justify-around md:flex grow">
                     <a onClick={() => setIsOpen(false)} href="#Home" className={`
-                            font-sansation md:text-2xl lg:3xl font-light
+                            md:text-2xl lg:3xl font-light
                             block h-20 px-6 lg:px-10 2xl:px-15 content-center active:bg-[#755eb9]
                         `}> Home 
                     </a>
                     <a onClick={() => setIsOpen(false)} href="#Projects" className={`
-                            font-sansation md:text-2xl lg:3xl font-light
+                            md:text-2xl lg:3xl font-light
                             block h-20 px-6 lg:px-10 2xl:px-15 content-center active:bg-[#755eb9]
                         `}> Projects 
                     </a>
                     <div className="">
                         <a onClick={() => setIsOpen(false)} href="#AboutMe" className={`
-                            font-sansation md:text-2xl lg:3xl font-light
+                            md:text-2xl lg:3xl font-light
                             block h-20 px-6 lg:px-10 2xl:px-15 content-center active:bg-[#755eb9]
                         `}> About Me </a>
                     </div>
                     <a onClick={() => setIsOpen(false)} href="#Contact" className={`
-                            font-sansation md:text-2xl lg:3xl font-light
+                            md:text-2xl lg:3xl font-light
                             block h-20 px-6 lg:px-10 2xl:px-15 content-center active:bg-[#755eb9]
                         `}> Contact 
                     </a>
@@ -79,38 +79,38 @@ export default function NavBar() {
                 Contact
                 */}
                 <a onClick={() => setIsOpen(false)} href="#Home" className={ isOpen ? `
-                    font-sansation text-2xl py-2 font-light active:bg-[#755eb9]
+                    text-2xl py-2 font-light active:bg-[#755eb9]
                     opacity-100 pointer-events-auto transition-opacity duration-400 delay-225
                     `: `
                     opacity-0 pointer-events-none transition-opacity duration-400
-                    font-sansation text-2xl py-2 font-light active:bg-[#755eb9]
+                    text-2xl py-2 font-light active:bg-[#755eb9]
                 `}>
                     <div className="pl-2">Home</div>
                 </a>
                 <a onClick={() => setIsOpen(false)} href="#Projects"  className={ isOpen ? `
-                    font-sansation text-2xl py-2 font-light active:bg-[#755eb9] delay-325
+                    text-2xl py-2 font-light active:bg-[#755eb9] delay-325
                     opacity-100 pointer-events-auto transition-opacity duration-400
                     `: `
                     opacity-0 pointer-events-none transition-opacity duration-400
-                    font-sansation text-2xl py-2 font-light active:bg-[#755eb9]
+                    text-2xl py-2 font-light active:bg-[#755eb9]
                 `}>
                     <div className="pl-2">Projects</div>
                 </a>
                 <a onClick={() =>  setIsOpen(false)} href="#AboutMe" className={ isOpen ? `
-                    font-sansation text-2xl py-2 font-light active:bg-[#755eb9] delay-425
+                    text-2xl py-2 font-light active:bg-[#755eb9] delay-425
                     opacity-100 pointer-events-auto transition-opacity duration-400
                     `: `
                     opacity-0 pointer-events-none transition-opacity duration-400
-                    font-sansation text-2xl py-2 font-light active:bg-[#755eb9]
+                    text-2xl py-2 font-light active:bg-[#755eb9]
                 `}>
                     <div className="pl-2">About Me</div>
                 </a>
                 <a onClick={() => setIsOpen(false)} href="#Contact" className={ isOpen ? `
-                    font-sansation text-2xl py-2 font-light active:bg-[#755eb9] delay-525
+                    text-2xl py-2 font-light active:bg-[#755eb9] delay-525
                     opacity-100 pointer-events-auto transition-opacity duration-400
                     `: `
                     opacity-0 pointer-events-none transition-opacity duration-400 
-                    font-sansation text-2xl py-2 font-light active:bg-[#755eb9]
+                    text-2xl py-2 font-light active:bg-[#755eb9]
                 `}>
                     <div className="pl-2">Contact</div>
                 </a>
