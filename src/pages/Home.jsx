@@ -17,12 +17,22 @@ export default function Home({ id }) {
                         Find more about me
                     </a>
                 </div>
-                
             </div>
-            {/* Links */}
+            {/* Link to Projects */}
+            <div className="sm:hidden my-10 flex justify-center">
+                <a href="#Projects" className="bg-[#EC4899] text-3xl font-normal rounded-3xl py-1 px-3">
+                    My Projects
+                </a>
+            </div>
+            {/* 
+            Links 
+            -GitHub
+            -LinkedIn
+            -Mail
+            */}
             <div className={`
                 flex flex-row sm:flex-col justify-around items-center
-                my-25 mx-5 py-5 sm:my-0 sm:px-5 sm:gap-12 2xl:gap-14
+                my-10 mx-5 py-5 sm:my-0 sm:px-5 sm:gap-12 2xl:gap-14
                 bg-[#1E1E1E] border-[#3D3D3D] border-1 rounded-2xl
                 `}>
                 <a className={`
