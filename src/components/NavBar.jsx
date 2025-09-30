@@ -11,7 +11,7 @@ export default function NavBar() {
             {/* NavBar */}
             <div className={` 
                 flex justify-between items-center md:justify-start
-                bg-[#1E1E1E]
+                bg-[#1E1E1E]/50
                 min-h-20
                 px-5
                 md:px-0
@@ -23,26 +23,27 @@ export default function NavBar() {
                 Anchor Buttons
                 */}
                 <div className="hidden justify-around md:flex grow">
-                    <div className="h-20 px-6 lg:px-10 2xl:px-15 content-center active:bg-[#755eb9]">
-                        <a onClick={() => setIsOpen(false)} href="#Home" className={`
-                            font-sansation md:text-3xl font-light
-                        `}> Home </a>
-                    </div>
-                    <div className="h-20 px-6 lg:px-10 2xl:px-15 content-center active:bg-[#755eb9]">
-                        <a onClick={() => setIsOpen(false)} href="#Projects" className={`
-                            font-sansation md:text-3xl font-light
-                        `}> Projects </a>
-                    </div>
-                    <div className="h-20 px-6 lg:px-10 2xl:px-15 content-center active:bg-[#755eb9]">
+                    <a onClick={() => setIsOpen(false)} href="#Home" className={`
+                            font-sansation md:text-2xl lg:3xl font-light
+                            block h-20 px-6 lg:px-10 2xl:px-15 content-center active:bg-[#755eb9]
+                        `}> Home 
+                    </a>
+                    <a onClick={() => setIsOpen(false)} href="#Projects" className={`
+                            font-sansation md:text-2xl lg:3xl font-light
+                            block h-20 px-6 lg:px-10 2xl:px-15 content-center active:bg-[#755eb9]
+                        `}> Projects 
+                    </a>
+                    <div className="">
                         <a onClick={() => setIsOpen(false)} href="#AboutMe" className={`
-                            font-sansation md:text-3xl font-light
+                            font-sansation md:text-2xl lg:3xl font-light
+                            block h-20 px-6 lg:px-10 2xl:px-15 content-center active:bg-[#755eb9]
                         `}> About Me </a>
                     </div>
-                    <div className="h-20 px-6 lg:px-10 2xl:px-15 content-center active:bg-[#755eb9]">
-                        <a onClick={() => setIsOpen(false)} href="#Contact" className={`
-                            font-sansation md:text-3xl font-light
-                        `}> Contact </a>
-                    </div>
+                    <a onClick={() => setIsOpen(false)} href="#Contact" className={`
+                            font-sansation md:text-2xl lg:3xl font-light
+                            block h-20 px-6 lg:px-10 2xl:px-15 content-center active:bg-[#755eb9]
+                        `}> Contact 
+                    </a>
                 </div>
                 {/* Mobile Menu Button*/}
                 <img
@@ -77,22 +78,38 @@ export default function NavBar() {
                 AboutMe
                 Contact
                 */}
-                <a onClick={() => setIsOpen(false)} href="#Home" className={`
+                <a onClick={() => setIsOpen(false)} href="#Home" className={ isOpen ? `
+                    font-sansation text-2xl py-2 font-light active:bg-[#755eb9]
+                    opacity-100 pointer-events-auto transition-opacity duration-400 delay-225
+                    `: `
+                    opacity-0 pointer-events-none transition-opacity duration-400
                     font-sansation text-2xl py-2 font-light active:bg-[#755eb9]
                 `}>
                     <div className="pl-2">Home</div>
                 </a>
-                <a onClick={() => setIsOpen(false)} href="#Projects"  className={`
+                <a onClick={() => setIsOpen(false)} href="#Projects"  className={ isOpen ? `
+                    font-sansation text-2xl py-2 font-light active:bg-[#755eb9] delay-325
+                    opacity-100 pointer-events-auto transition-opacity duration-400
+                    `: `
+                    opacity-0 pointer-events-none transition-opacity duration-400
                     font-sansation text-2xl py-2 font-light active:bg-[#755eb9]
                 `}>
                     <div className="pl-2">Projects</div>
                 </a>
-                <a onClick={() =>  setIsOpen(false)} href="#AboutMe" className={`
-                    font-sansation text-2xl  py-2 font-light active:bg-[#755eb9]
+                <a onClick={() =>  setIsOpen(false)} href="#AboutMe" className={ isOpen ? `
+                    font-sansation text-2xl py-2 font-light active:bg-[#755eb9] delay-425
+                    opacity-100 pointer-events-auto transition-opacity duration-400
+                    `: `
+                    opacity-0 pointer-events-none transition-opacity duration-400
+                    font-sansation text-2xl py-2 font-light active:bg-[#755eb9]
                 `}>
                     <div className="pl-2">About Me</div>
                 </a>
-                <a onClick={() => setIsOpen(false)} href="#Contact" className={`
+                <a onClick={() => setIsOpen(false)} href="#Contact" className={ isOpen ? `
+                    font-sansation text-2xl py-2 font-light active:bg-[#755eb9] delay-525
+                    opacity-100 pointer-events-auto transition-opacity duration-400
+                    `: `
+                    opacity-0 pointer-events-none transition-opacity duration-400 
                     font-sansation text-2xl py-2 font-light active:bg-[#755eb9]
                 `}>
                     <div className="pl-2">Contact</div>
