@@ -1,18 +1,24 @@
 export default function Home({ id }) {
     return(
         <div id={id} className="z-0 pt-30 md:pt-22 flex flex-col">
+            {/* Introduction */}
             <div className="flex flex-col items-center gap-1 pt-3">
                 <div className="text-2xl font-light">
                     Hi, I'm
                 </div>
-                <div className="mt-2 text-4xl text-[#A78BFA]">
+                <div className="mt-3 text-4xl text-[#A78BFA]">
                     Markus Feng
                 </div>
-                <div className="text-[#D1D5DB] text-sm italic">
-                    Computer Science Student <br/> Aspiring Software Engineer
+                <div className="text-[#D1D5DB] text-sm italic text-center">
+                    Computer Science Student<p className="text-sm/2" >•</p> Aspiring Software Engineer <br/>
+                    <a href="#AboutMe" className="text-[#6D28D9] active:text-[#14B8A6] text-sm not-italic text-center">
+                    More about me
+                    </a>
                 </div>
+                
             </div>
-            <div className="flex flex-row justify-around items-center mt-15 ">
+            {/* Links */}
+            <div className="flex flex-row justify-around items-center my-15 ">
                 <a className={`
                     pb-[0.5px] outline-3 outline-[#6D28D9] rounded-4xl outline-offset-3
                     active:outline-[#14B8A6]
