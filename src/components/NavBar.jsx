@@ -59,17 +59,15 @@ export default function NavBar() {
             />
             {/* Mobile Menu Options*/}
             {/* Mobile Menu background*/}
-            <div className={ isOpen ? `
-                fixed top-20 left-0 z-40 flex flex-col md:hidden
-                opacity-100 pointer-events-auto transition-opacity duration-300
-                bg-[#242424]
-                min-h-40 w-screen 
-                ` : `
-                fixed top-20 left-0 z-40 flex flex-col md:hidden
-                opacity-0 pointer-events-none transition-opacity duration-300 
-                bg-[#242424]
-                min-h-40 w-screen 
-            `}>
+            <div className={`
+                    fixed top-20 left-0 z-40 flex flex-col md:hidden transition-opacity duration-300
+                    bg-[#242424]
+                    min-h-40 w-screen 
+                    ${isOpen ? `
+                    opacity-100 pointer-events-auto 
+                    `: `
+                    opacity-0 pointer-events-none
+                `}`}>
                 {/*
                 Mobile Menu page buttons:
                 Home
@@ -77,40 +75,40 @@ export default function NavBar() {
                 AboutMe
                 Contact
                 */}
-                <a onClick={() => setIsOpen(false)} href="#Home" className={ isOpen ? `
-                    text-2xl py-2 font-light active:bg-[#755eb9]
-                    opacity-100 pointer-events-auto transition-opacity duration-400 delay-225
+                <a onClick={() => setIsOpen(false)} href="#Home" className={`
+                    text-2xl py-2 font-light active:bg-[#755eb9] delay-225 transition-opacity duration-400
+                    ${isOpen ? `
+                    opacity-100 pointer-events-auto 
                     `: `
-                    opacity-0 pointer-events-none transition-opacity duration-400
-                    text-2xl py-2 font-light active:bg-[#755eb9]
-                `}>
+                    opacity-0 pointer-events-none
+                `}`}>
                     <div className="pl-2">Home</div>
                 </a>
-                <a onClick={() => setIsOpen(false)} href="#Projects"  className={ isOpen ? `
-                    text-2xl py-2 font-light active:bg-[#755eb9] delay-325
-                    opacity-100 pointer-events-auto transition-opacity duration-400
+                <a onClick={() => setIsOpen(false)} href="#Projects"  className={`
+                    text-2xl py-2 font-light active:bg-[#755eb9] delay-325 transition-opacity duration-400
+                    ${isOpen ? `
+                    opacity-100 pointer-events-auto 
                     `: `
-                    opacity-0 pointer-events-none transition-opacity duration-400
-                    text-2xl py-2 font-light active:bg-[#755eb9]
-                `}>
+                    opacity-0 pointer-events-none
+                `}`}>
                     <div className="pl-2">Projects</div>
                 </a>
-                <a onClick={() =>  setIsOpen(false)} href="#AboutMe" className={ isOpen ? `
-                    text-2xl py-2 font-light active:bg-[#755eb9] delay-425
-                    opacity-100 pointer-events-auto transition-opacity duration-400
+                <a onClick={() =>  setIsOpen(false)} href="#AboutMe" className={`
+                    text-2xl py-2 font-light active:bg-[#755eb9] delay-425 transition-opacity duration-400
+                    ${isOpen ? `
+                    opacity-100 pointer-events-auto 
                     `: `
-                    opacity-0 pointer-events-none transition-opacity duration-400
-                    text-2xl py-2 font-light active:bg-[#755eb9]
-                `}>
+                    opacity-0 pointer-events-none
+                `}`}>
                     <div className="pl-2">About Me</div>
                 </a>
-                <a onClick={() => setIsOpen(false)} href="#Contact" className={ isOpen ? `
-                    text-2xl py-2 font-light active:bg-[#755eb9] delay-525
-                    opacity-100 pointer-events-auto transition-opacity duration-400
+                <a onClick={() => setIsOpen(false)} href="#Contact" className={`
+                    text-2xl py-2 font-light active:bg-[#755eb9] delay-525 transition-opacity duration-400
+                    ${isOpen ? `
+                    opacity-100 pointer-events-auto 
                     `: `
-                    opacity-0 pointer-events-none transition-opacity duration-400 
-                    text-2xl py-2 font-light active:bg-[#755eb9]
-                `}>
+                    opacity-0 pointer-events-none
+                `}`}>
                     <div className="pl-2">Contact</div>
                 </a>
             </div>
