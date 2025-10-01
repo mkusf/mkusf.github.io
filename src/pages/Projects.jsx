@@ -68,9 +68,9 @@ export default function Projects({ id }) {
                     src={rightArrow} alt="Right arrow button"
                 />
             </div>
-            <div className="flex-row flex justify-center mt-2 gap-2">
-                <div className="bg-[#F3F4F6] w-3 h-3 rounded-full"></div>
-                <div className="bg-[#3D3D3D] w-3 h-3 rounded-full"></div>
+            <div className={`flex-row flex justify-center mt-2 gap-2`}>
+                <div className={project === 0 ? `bg-[#F3F4F6] w-3 h-3 rounded-full` : `bg-[#3D3D3D] w-3 h-3 rounded-full`}></div>
+                <div className={project === 1 ? `bg-[#F3F4F6] w-3 h-3 rounded-full` : `bg-[#3D3D3D] w-3 h-3 rounded-full`}></div>
             </div>
         </div>
     );
