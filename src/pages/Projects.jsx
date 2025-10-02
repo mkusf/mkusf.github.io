@@ -110,19 +110,19 @@ export default function Projects({ id }) {
                         </div>
                         <a href="https://final-project-4-winds.onrender.com" className="text-[#8B5CF6] sm:text-lg lg:text-xl hover:text-[#14B8A6] active:text-[#14B8A6]">Link to Website</a>
                         <div className="flex flex-col gap-2 sm:px-3 sm:pb-10">
-                            <div className="self-start text-base sm:text-lg lg:text-xl text-[#D1D5DB]">
-                                TripTips is a full-stack trip planning application I built with three peers as part of SFU's 
-                                CMPT 276 course. We applied an Agile software development life cycle that combined Scrum and
-                                Kanban practices, allowing us to stay adaptable while meeting deadlines. I led the project
-                                planning process by creating a detailed work breakdown structure, defining user stories, and
-                                coordinating weekly sprint meetings alongside daily check-ins to keep the team aligned.
+                            <div className="self-start text-base sm:text-lg lg:text-xl lg:mt-3 text-[#D1D5DB]">
+                                TripTips is a full-stack trip planning application 
+                                I built with three peers as part of SFU's CMPT 276 course. We applied an <span className="text-[#A78BFA]">Agile software development </span>
+                                life cycle that combined <span className="text-[#A78BFA]">Scrum</span> and <span className="text-[#A78BFA]">Kanban</span> practices, 
+                                allowing us to stay adaptable while meeting deadlines. I led the project planning process by creating a detailed work breakdown structure, defining user stories, and coordinating weekly sprint meetings alongside daily check-ins to keep the team aligned.
                             </div>
                             <div className="self-start text-xl sm:text-2xl lg:text-3xl">
                                 Technical Implementation
                             </div>
                             <div className="self-start text-base sm:text-lg lg:text-xl sm:px-5 text-[#D1D5DB]">
-                                On the technical side, I implemented key front-end features using React and Tailwind CSS, and
-                                integrated both the TripAdvisor API and the Google Maps JavaScript API to provide a rich,
+                                On the technical side, We implemented key front-end features using <span className="text-[#A78BFA]">React </span> 
+                                and <span className="text-[#A78BFA]">Tailwind CSS</span>, and
+                                integrated both the <span className="text-[#A78BFA]">TripAdvisor API</span> and the <span className="text-[#A78BFA]">Google Maps JavaScript API</span> to provide a rich,
                                 location-based experience. To support collaboration, I introduced a structured Git branching
                                 strategy that minimized conflicts and kept our codebase clean.
                             </div>
@@ -130,8 +130,10 @@ export default function Projects({ id }) {
                                 Deployment & Testing
                             </div>
                             <div className="self-start text-base sm:text-lg sm:px-5 lg:text-xl text-[#D1D5DB]">
-                                For deployment, I set up a CI/CD pipeline with GitHub Actions and Render, enabling our team to
-                                push updates with minimal friction. I also wrote automated tests in Jest to ensure reliability
+                                For deployment, I set up a <span className="text-[#A78BFA]">CI/CD pipeline</span> with 
+                                GitHub Actions and Render, enabling our team to
+                                push updates with minimal friction. My team wrote 
+                                <span className="text-[#A78BFA]"> automated tests</span> in Jest to ensure reliability
                                 and reduce regressions. These practices not only streamlined our workflow but also reduced manual
                                 testing time significantly, freeing the team to focus on feature development.
                             </div>
@@ -140,9 +142,10 @@ export default function Projects({ id }) {
                             </div>
                             <div className="self-start text-base sm:text-lg  sm:px-5 lg:text-xl text-[#D1D5DB]">
                                 The result was a polished prototype that met all functional requirements, delivered on time, and
-                                received positive feedback for its clean user experience. Beyond the technical outcomes, this project
-                                deepened my ability to translate ambiguous requirements into concrete tasks, reinforced the value of
-                                strong communication in team settings, and gave me practical insight into balancing Scrum's structure
+                                received positive feedback from classmates for its clean user experience. Beyond the technical outcomes, this project
+                                deepened my ability to translate ambiguous requirements into concrete tasks, reinforced the 
+                                 value of <span className="text-[#A78BFA]"> strong communication </span>
+                                in team settings, and gave me practical insight into balancing Scrum's structure
                                 with Kanban's flexibility.
                             </div>
                         </div>
@@ -174,17 +177,17 @@ export default function Projects({ id }) {
                                 Technical Implementation
                             </div>
                             <div className="self-start text-base sm:text-lg lg:text-xl sm:px-5 text-[#D1D5DB]">
-                                We collected and annotated over 500 traffic light images using RoboFlow to create a 
+                                We collected and <span className="text-[#A78BFA]">annotated</span> over 500 traffic light images using RoboFlow to create a 
                                 robust and balanced dataset. Leveraging Ultralytics's YOLOv8 framework in Python, we 
                                 trained an object detection model designed to classify traffic lights into three states:
-                                 green, yellow, and red. Evaluation metrics such as precision and recall were used to 
-                                 guide tuning and model improvements.
+                                green, yellow, and red. Evaluation metrics such as precision and recall were used to 
+                                guide tuning and model improvements.
                             </div>
                             <div className="self-start text-xl sm:text-2xl  lg:text-3xl">
                                 Results & Lessons Learned
                             </div>
                             <div className="self-start text-base sm:text-lg  sm:px-5 lg:text-xl text-[#D1D5DB]">
-                                The final model achieved approximately 80% accuracy in real-time detection across all three
+                                The final model achieved roughly <span className="text-[#A78BFA]"> 80% accuracy </span> in real-time detection across all three
                                 classes, demonstrating strong potential for integration into larger intelligent transportation
                                 systems. This project gave me valuable experience in data annotation, training and evaluating
                                 machine learning models, and collaborating effectively within a small AI-focused team.
