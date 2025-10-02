@@ -30,6 +30,7 @@ export default function Home({ id }) {
             -LinkedIn
             -Mail
             */}
+            <div className="flex justify-center text-2xl sm:hidden"> Contact me! </div>
             <div className={`
                 flex flex-row sm:flex-col justify-around items-center
                 mb-10 mx-5 py-5 sm:my-0 sm:px-5 sm:gap-12 2xl:gap-14

@@ -1,7 +1,6 @@
 import Nav from './components/NavBar'
 import Home from './pages/Home'
 import Projects from './pages/Projects'
-import Contact from './pages/Contact'
 import AboutMe from './pages/AboutMe'
 import Footer from './pages/Footer'
 function App() {
@@ -11,7 +10,6 @@ function App() {
       <Home id="Home" />
       <Projects id="Projects" />
       <AboutMe id="AboutMe"/>
-      <Contact id="Contact"/>
       <Footer/>
       </div>
   )

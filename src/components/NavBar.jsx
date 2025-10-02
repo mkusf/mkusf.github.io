@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { NavLink } from 'react-router-dom';
 import menuIcon from "/assets/menu-icon.png";
-import closeIcon from "/assets/grp4.png";
+import closeIcon from "/assets/close-button.png";
 
 
 export default function NavBar() {
@@ -38,11 +38,6 @@ export default function NavBar() {
                             block h-20 flex-1 content-center text-center active:bg-[#755eb9] hover:bg-[#755eb9]
                         `}> About Me 
                     </a>
-                    <a onClick={() => setIsOpen(false)} href="#Contact" className={`
-                            md:text-2xl lg:3xl font-light
-                            block h-20 flex-1 content-center text-center active:bg-[#755eb9] hover:bg-[#755eb9]
-                        `}> Contact 
-                    </a>
                 </div>
                 {/* Mobile Menu Button*/}
                 <img
@@ -62,7 +57,7 @@ export default function NavBar() {
             <div className={`
                     fixed top-20 left-0 z-40 flex flex-col md:hidden transition-opacity duration-300
                     bg-[#242424]
-                    min-h-40 w-screen 
+                    min-h-30 w-screen 
                     ${isOpen ? `
                     opacity-100 pointer-events-auto 
                     `: `
@@ -101,15 +96,6 @@ export default function NavBar() {
                     opacity-0 pointer-events-none
                 `}`}>
                     <div className="pl-2">About Me</div>
-                </a>
-                <a onClick={() => setIsOpen(false)} href="#Contact" className={`
-                    text-2xl py-2 font-light active:bg-[#755eb9] delay-525 transition-opacity duration-400
-                    ${isOpen ? `
-                    opacity-100 pointer-events-auto 
-                    `: `
-                    opacity-0 pointer-events-none
-                `}`}>
-                    <div className="pl-2">Contact</div>
                 </a>
             </div>
             
