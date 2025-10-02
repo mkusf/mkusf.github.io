@@ -8,18 +8,4 @@
     <priority>1.0</priority>
   </url>
 
-  <!-- Projects page / section -->
-  <url>
-    <loc>https://mkusf.github.io/#projects</loc>
-    <lastmod>2025-10-01</lastmod>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- About page / section -->
-  <url>
-    <loc>https://mkusf.github.io/#about</loc>
-    <lastmod>2025-10-01</lastmod>
-    <priority>0.6</priority>
-  </url>
-
 </urlset>
