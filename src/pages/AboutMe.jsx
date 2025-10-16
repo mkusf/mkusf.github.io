@@ -1,7 +1,7 @@
 export default function AboutMe({ id }) {
     return(
         <div id={id} className="mt-10 py-12 sm:py-16 px-4 sm:px-8" >
-            <div className="max-w-4xl mx-auto text-center">
+            <div className="max-w-4xl mx-auto text-center bg-[#1E1E1E] p-5 rounded-3xl">
                 <h3 className="text-4xl sm:text-5xl lg:text-6xl font-semibold mb-6">About Me</h3>
                 <p className="text-base sm:text-lg text-[#D1D5DB] leading-relaxed">
                     Welcome to my website! I am a Computing Science student at Simon Fraser University (graduating Fall 2027) with a passion for building clean, reliable, and impactful software.
